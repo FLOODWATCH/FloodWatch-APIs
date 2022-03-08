@@ -2,9 +2,7 @@ package com.example.floodwatch.FLuser;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -23,7 +21,13 @@ public class FLuserController {
 
     //user Get API
     @GetMapping
-    public List<FLuser> Hello(){
+    public List<FLuser> getFLuser(){
         return fLuserService.getFluserFromService();
+    }
+
+    //user Post API
+    @PostMapping
+    public void addFLuser(@RequestBody FLuser fLuser){
+        fLuserService.addFluserFromService(fLuser);
     }
 }

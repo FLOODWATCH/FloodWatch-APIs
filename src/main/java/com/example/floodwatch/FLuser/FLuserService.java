@@ -16,19 +16,15 @@ public class FLuserService {
         this.fLuserRepository = fLuserRepository;
     }
 
-    //Get logic
+    //Get Service
     public List<FLuser> getFluserFromService(){
         return fLuserRepository.findAll();
     }
 
-//    public List<FLuser> getFluserFromService(){
-//        return List.of(
-//                new FLuser(1L,
-//                        "Keemchard Tamio",
-//                        "keemchardtamio@gmail.com",
-//                        "09305193102",
-//                        "Purok 3 0129 Santol, Tanza, Cavite",
-//                        "bosskc03")
-//        );
-//    }
+    //Post Service
+    public void addFluserFromService(FLuser fLuser){
+        fLuserRepository.save(fLuser);
+    }
+
+
 }
