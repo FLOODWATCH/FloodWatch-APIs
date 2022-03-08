@@ -11,18 +11,18 @@ public class FLuserConfiguration {
     CommandLineRunner commandLineRunner (FLuserRepository fLuserRepository){
         return args -> {
             FLuser [] users = {
-                    new FLuser(
-                            "Keemchard Tamio",
-                            "keemchardtamio@gmail.com",
-                            "09305193102",
-                            "Purok 3 0129 Santol, Tanza, Cavite",
-                            "bosskc03"),
-                    new FLuser(
-                            "Testing Test",
-                            "testingtest@gmail.com",
-                            "09123456789",
-                            "Amaya 2 Tanza Cavite",
-                            "test123"),
+//                    new FLuser(
+//                            "Keemchard Tamio",
+//                            "keemchardtamio@gmail.com",
+//                            "09305193102",
+//                            "Purok 3 0129 Santol, Tanza, Cavite",
+//                            "bosskc03"),
+//                    new FLuser(
+//                            "Testing Test",
+//                            "testingtest@gmail.com",
+//                            "09123456789",
+//                            "Amaya 2 Tanza Cavite",
+//                            "test123"),
             };
             for(int i = 0; i < users.length; i++){
 //                System.out.println("------------------------------------------------------------------------------------");
