@@ -6,6 +6,8 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class FLuserConfiguration {
+    //datasource first db STARTTTTTTTTTTTTT
+    //datasource first db ENDDDDDDDDDDDDDDD
 
     @Bean
     CommandLineRunner commandLineRunner (FLuserRepository fLuserRepository){
@@ -32,4 +34,11 @@ public class FLuserConfiguration {
             }
         };
     }
+
+
+
+
+
+
+
 }
