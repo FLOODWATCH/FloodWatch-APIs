@@ -13,17 +13,17 @@ public class FLuserService {
 
     @Autowired
     public FLuserService(FLuserRepository fLuserRepository) {
-        this.fLuserRepository = fLuserRepository;
+      this.fLuserRepository = fLuserRepository;
     }
 
     //Get Service
     public List<FLuser> getFluserFromService(){
-        return fLuserRepository.findAll();
+      return fLuserRepository.findAll();
     }
 
     //Post Service
     public void addFluserFromService(FLuser fLuser){
-        fLuserRepository.save(fLuser);
+      fLuserRepository.save(fLuser);
     }
 
 

@@ -23,12 +23,12 @@ public class FLuserController {
     //user Get API
     @GetMapping
     public List<FLuser> getFLuser(){
-        return fLuserService.getFluserFromService();
+      return fLuserService.getFluserFromService();
     }
 
     //user Post API
     @PostMapping
     public void addFLuser(@RequestBody FLuser fLuser){
-        fLuserService.addFluserFromService(fLuser);
+      fLuserService.addFluserFromService(fLuser);
     }
 }

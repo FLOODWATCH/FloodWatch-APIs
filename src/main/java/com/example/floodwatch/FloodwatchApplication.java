@@ -12,8 +12,8 @@ import java.util.List;
 @SpringBootApplication
 public class FloodwatchApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(FloodwatchApplication.class, args);
-	}
+  public static void main(String[] args) {
+    SpringApplication.run(FloodwatchApplication.class, args);
+  }
 
 }
