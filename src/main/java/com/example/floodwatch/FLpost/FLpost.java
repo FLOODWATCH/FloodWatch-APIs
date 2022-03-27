@@ -1,6 +1,7 @@
 package com.example.floodwatch.FLpost;
 
 import javax.persistence.*;
+import java.util.Arrays;
 
 @Entity
 @Table
@@ -21,6 +22,8 @@ public class FLpost {
     private String profTextPost;
     private String profPostTime;
 
+
+    //constructor with id, name, email, post, and time
     public FLpost(Long id, String profName, String profEmail, String profTextPost, String profPostTime) {
         this.id = id;
         this.profName = profName;
@@ -29,6 +32,7 @@ public class FLpost {
         this.profPostTime = profPostTime;
     }
 
+    //constructor without id and file to post
     public FLpost(String profName, String profEmail, String profTextPost, String profPostTime) {
         this.profName = profName;
         this.profEmail = profEmail;
@@ -36,6 +40,7 @@ public class FLpost {
         this.profPostTime = profPostTime;
     }
 
+    //constructor without parameter
     public FLpost() {
     }
 
@@ -78,7 +83,6 @@ public class FLpost {
     public void setProfPostTime(String profPostTime) {
         this.profPostTime = profPostTime;
     }
-
 
     @Override
     public String toString() {
