@@ -11,14 +11,14 @@ public class FLuserConfiguration {
   //datasource first db STARTTTTTTTTTTTTT
   //datasource first db ENDDDDDDDDDDDDDDD
 
-  @Bean
-  CommandLineRunner commandLineRunner(FLuserRepository fLuserRepository) {
-    return args -> {
-      FLuser [] users = {
-
-      };
-      };
-    };
-  }
+//  @Bean
+//  CommandLineRunner commandLineRunner(FLuserRepository fLuserRepository) {
+//    return args -> {
+//      FLuser [] users = {
+//
+//      };
+//      };
+//    };
+}
 
 

@@ -104,18 +104,25 @@ public class FLpostService {
       } else {
           fLpostRepository.deleteById(postId);
       }
-  }
+    }
 
-  // UPDATE SERVICE
-  @Transactional
-  public void updateFLpost(Long postId, String profTextPost) {
-      FLpost fLpost = fLpostRepository.findById(postId)
-        .orElseThrow(() -> new IllegalStateException("student does not exists"));
-    fLpost.setProfTextPost(profTextPost);
+    // UPDATE SERVICE
+     @Transactional
+     public void updateFLpost(Long postId, String profTextPost) {
+        FLpost fLpost = fLpostRepository.findById(postId)
+            .orElseThrow(() -> new IllegalStateException("student does not exists"));
+     fLpost.setProfTextPost(profTextPost);
 //    if (profTextPost != null &&
 //          profTextPost.length() > 0 &&
 //          !Objects.equals(fLpost.getProfTextPost(), profTextPost)) {
 //        fLpost.setProfTextPost(profTextPost);
 //      }
-  }
+    }
+
+
+
+
+    //for fileeeeeeeeeeeeeeeeeeee START
+
+    //for fileeeeeeeeeeeeeeeeeeee START
 }
