@@ -1,6 +1,7 @@
 package com.example.floodwatch.FLpost;
 
 import javax.persistence.*;
+import java.util.Arrays;
 
 @Entity
 @Table
@@ -20,26 +21,32 @@ public class FLpost {
     private String profEmail;
     private String profTextPost;
     private String profPostTime;
+    @Lob
+    private byte[] profFile;
 
-    public FLpost(Long id, String profName, String profEmail, String profTextPost, String profPostTime) {
+    public FLpost(Long id, String profName, String profEmail, String profTextPost, String profPostTime, byte[] profFile) {
         this.id = id;
         this.profName = profName;
         this.profEmail = profEmail;
         this.profTextPost = profTextPost;
         this.profPostTime = profPostTime;
+        this.profFile = profFile;
     }
 
-    public FLpost(String profName, String profEmail, String profTextPost, String profPostTime) {
+    public FLpost(String profName, String profEmail, String profTextPost, String profPostTime, byte[] profFile) {
         this.profName = profName;
         this.profEmail = profEmail;
         this.profTextPost = profTextPost;
         this.profPostTime = profPostTime;
+        this.profFile = profFile;
     }
 
     public FLpost() {
     }
 
-    public Long getId() {
+
+
+  public Long getId() {
         return id;
     }
 
@@ -79,15 +86,23 @@ public class FLpost {
         this.profPostTime = profPostTime;
     }
 
-
-    @Override
-    public String toString() {
-        return "FLpost{" +
-                "id=" + id +
-                ", profName='" + profName + '\'' +
-                ", profEmail='" + profEmail + '\'' +
-                ", profTextPost='" + profTextPost + '\'' +
-                ", profPostTime='" + profPostTime + '\'' +
-                '}';
+    public byte[] getProfFile() {
+      return profFile;
     }
+
+    public void setProfFile(byte[] profFile) {
+      this.profFile = profFile;
+    }
+
+  @Override
+  public String toString() {
+    return "FLpost{" +
+      "id=" + id +
+      ", profName='" + profName + '\'' +
+      ", profEmail='" + profEmail + '\'' +
+      ", profTextPost='" + profTextPost + '\'' +
+      ", profPostTime='" + profPostTime + '\'' +
+      ", profFile=" + Arrays.toString(profFile) +
+      '}';
+  }
 }
