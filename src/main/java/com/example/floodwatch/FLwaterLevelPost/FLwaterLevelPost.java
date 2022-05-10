@@ -21,22 +21,25 @@ public class FLwaterLevelPost {
     private String wlTime;
     private String wlMonth;
     private String wlColor;
+    private String wlPercent;
 
-    public FLwaterLevelPost(Long id, String wlLevel, String wlInfo, String wlTime, String wlMonth, String wlColor) {
+    public FLwaterLevelPost(Long id, String wlLevel, String wlInfo, String wlTime, String wlMonth, String wlColor, String wlPercent) {
         this.id = id;
         this.wlLevel = wlLevel;
         this.wlInfo = wlInfo;
         this.wlTime = wlTime;
         this.wlMonth = wlMonth;
         this.wlColor = wlColor;
+        this.wlPercent = wlPercent;
     }
 
-    public FLwaterLevelPost(String wlLevel, String wlInfo, String wlTime, String wlMonth, String wlColor) {
+    public FLwaterLevelPost(String wlLevel, String wlInfo, String wlTime, String wlMonth, String wlColor, String wlPercent) {
         this.wlLevel = wlLevel;
         this.wlInfo = wlInfo;
         this.wlTime = wlTime;
         this.wlMonth = wlMonth;
         this.wlColor = wlColor;
+        this.wlPercent = wlPercent;
     }
 
     public FLwaterLevelPost() {
@@ -90,6 +93,14 @@ public class FLwaterLevelPost {
         this.wlColor = wlColor;
     }
 
+    public String getWlPercent() {
+        return wlPercent;
+    }
+
+    public void setWlPercent(String wlPercent) {
+        this.wlPercent = wlPercent;
+    }
+
     @Override
     public String toString() {
         return "FLwaterLevelPost{" +
@@ -99,6 +110,88 @@ public class FLwaterLevelPost {
                 ", wlTime='" + wlTime + '\'' +
                 ", wlMonth='" + wlMonth + '\'' +
                 ", wlColor='" + wlColor + '\'' +
+                ", wlPercent='" + wlPercent + '\'' +
                 '}';
     }
+
+
+//    public FLwaterLevelPost(Long id, String wlLevel, String wlInfo, String wlTime, String wlMonth, String wlColor) {
+//        this.id = id;
+//        this.wlLevel = wlLevel;
+//        this.wlInfo = wlInfo;
+//        this.wlTime = wlTime;
+//        this.wlMonth = wlMonth;
+//        this.wlColor = wlColor;
+//    }
+//
+//    public FLwaterLevelPost(String wlLevel, String wlInfo, String wlTime, String wlMonth, String wlColor) {
+//        this.wlLevel = wlLevel;
+//        this.wlInfo = wlInfo;
+//        this.wlTime = wlTime;
+//        this.wlMonth = wlMonth;
+//        this.wlColor = wlColor;
+//    }
+//
+//    public FLwaterLevelPost() {
+//    }
+//
+//    public Long getId() {
+//        return id;
+//    }
+//
+//    public void setId(Long id) {
+//        this.id = id;
+//    }
+//
+//    public String getWlLevel() {
+//        return wlLevel;
+//    }
+//
+//    public void setWlLevel(String wlLevel) {
+//        this.wlLevel = wlLevel;
+//    }
+//
+//    public String getWlInfo() {
+//        return wlInfo;
+//    }
+//
+//    public void setWlInfo(String wlInfo) {
+//        this.wlInfo = wlInfo;
+//    }
+//
+//    public String getWlTime() {
+//        return wlTime;
+//    }
+//
+//    public void setWlTime(String wlTime) {
+//        this.wlTime = wlTime;
+//    }
+//
+//    public String getWlMonth() {
+//        return wlMonth;
+//    }
+//
+//    public void setWlMonth(String wlMonth) {
+//        this.wlMonth = wlMonth;
+//    }
+//
+//    public String getWlColor() {
+//        return wlColor;
+//    }
+//
+//    public void setWlColor(String wlColor) {
+//        this.wlColor = wlColor;
+//    }
+//
+//    @Override
+//    public String toString() {
+//        return "FLwaterLevelPost{" +
+//                "id=" + id +
+//                ", wlLevel='" + wlLevel + '\'' +
+//                ", wlInfo='" + wlInfo + '\'' +
+//                ", wlTime='" + wlTime + '\'' +
+//                ", wlMonth='" + wlMonth + '\'' +
+//                ", wlColor='" + wlColor + '\'' +
+//                '}';
+//    }
 }

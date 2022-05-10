@@ -15,11 +15,23 @@ public class FLwaterLevelPostService {
         this.fLwaterLevelPostRepository = fLwaterLevelPostRepository;
     }
 
+    //get from service
     public List<FLwaterLevelPost> getWaterLevelPostFromService(){
         return fLwaterLevelPostRepository.findAll();
     }
 
+    //post from service
     public void addWaterLevelPostFromService(FLwaterLevelPost fLwaterLevelPost){
         this.fLwaterLevelPostRepository.save(fLwaterLevelPost);
+    }
+
+    //delete from service
+    public void deleteWaterLevelPostFromService(Long FlwaterLevelPostId) {
+        boolean exists =  fLwaterLevelPostRepository.existsById(FlwaterLevelPostId);
+        if (!exists) {
+            throw new IllegalStateException("Poll id does not exist");
+        } else {
+            fLwaterLevelPostRepository.deleteById(FlwaterLevelPostId);
+        }
     }
 }
