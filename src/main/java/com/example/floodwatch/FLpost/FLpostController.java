@@ -9,7 +9,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 import java.util.List;
 
-import static com.sun.beans.introspect.PropertyInfo.Name.required;
+//import static com.sun.beans.introspect.PropertyInfo.Name.required;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")

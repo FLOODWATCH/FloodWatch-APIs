@@ -14,7 +14,7 @@
   <name>floodwatch</name>
   <description>Backend of the FloodWatch Web App</description>
   <properties>
-    <java.version>17</java.version>
+    <java.version>8</java.version>
   </properties>
   <dependencies>
     <dependency>
