@@ -26,4 +26,9 @@ public class FLwaterLevelPostController {
     public void addWaterLevelPost(@RequestBody FLwaterLevelPost fLwaterLevelPost){
         this.fLwaterLevelPostService.addWaterLevelPostFromService(fLwaterLevelPost);
     }
+
+    @DeleteMapping(path = "{FlwaterLevelPostId}")
+    public void deleteFLpost(@PathVariable("FlwaterLevelPostId") Long FlwaterLevelPostId) {
+        this.fLwaterLevelPostService.deleteWaterLevelPostFromService(FlwaterLevelPostId);
+    }
 }

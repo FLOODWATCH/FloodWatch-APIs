@@ -1,6 +1,5 @@
 package com.example.floodwatch.FLfile;
 
-import javax.annotation.processing.Generated;
 import javax.persistence.*;
 import java.util.Arrays;
 
